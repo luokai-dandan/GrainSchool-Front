@@ -155,16 +155,16 @@ export default {
     getBannerList() {
       banner.getBannerList()
         .then(response => {
-          console.log("==============查询幻灯片==============")
-          console.log(response)
+          // console.log("==============查询幻灯片==============")
+          // console.log(response)
           this.bannerList = response.data.data.list
         })
     },
     getIndex() {
       index.getIndex()
         .then(response => {
-          console.log("==============查询热门课程和名师==============")
-          console.log(response)
+          // console.log("==============查询热门课程和名师==============")
+          // console.log(response)
           this.courseList = response.data.data.courseList
           this.teacherList = response.data.data.teacherList
         })

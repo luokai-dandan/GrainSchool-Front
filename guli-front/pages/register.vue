@@ -81,7 +81,7 @@ export default {
         password: ''
       },
       sending: true,      //是否发送验证码
-      second: 3,        //倒计时间
+      second: 60,        //倒计时间
       codeTest: '获取验证码'
     }
   },
@@ -127,7 +127,7 @@ export default {
           clearInterval(result);
           this.sending = true;
           //this.disabled = false;
-          this.second = 3;
+          this.second = 60;
           this.codeTest = "重新获取验证码"
         }
       }, 1000);

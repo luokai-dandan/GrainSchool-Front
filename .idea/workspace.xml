@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="前端合并">
-      <change afterPath="$PROJECT_DIR$/guli-front/api/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/api/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/layouts/sign.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/pages/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/pages/register.vue" afterDir="false" />
+    <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/guli-front/pages/verCodeLogin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/subject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/api/edu/vod-js-sdk-v6.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/api/edu/vod-js-sdk-v6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/course/chapter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/course/chapter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/course/info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/course/info.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/course/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/course/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/course/publish.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/course/publish.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/subject/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/subject/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/subject/save.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/subject/save.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/sign.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/layouts/sign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/sign.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/plugins/nuxt-swiper-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/plugins/nuxt-swiper-plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/utils/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +110,7 @@
       <workItem from="1655663617987" duration="2354000" />
       <workItem from="1655666007947" duration="316000" />
       <workItem from="1655666329224" duration="766000" />
-      <workItem from="1655701778229" duration="7837000" />
+      <workItem from="1655701778229" duration="19046000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -139,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655664253745</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="前端合并">
+      <created>1655730082122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655730082122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
