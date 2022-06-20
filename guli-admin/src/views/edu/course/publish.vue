@@ -32,59 +32,58 @@
 import course from '@/api/edu/course'
 
 export default {
-  
-    data() {
-        return {
-            saveBtnDisabled:false, //保存按钮是否禁用
-            courseId:'',  //通过路由获取的课程id
-            coursePublish: {} //最终前端的得到的显示信息类
-        }
-    },
-    created() {
 
-        //获取路由中的id
-        if(this.$route.params && this.$route.params.id) {
-            this.courseId = this.$route.params.id
-            this.getPublishCourseInfo()
-        } 
-    },
-    methods: {
+  data() {
+    return {
+      saveBtnDisabled: false, // 保存按钮是否禁用
+      courseId: '', // 通过路由获取的课程id
+      coursePublish: {} // 最终前端的得到的显示信息类
+    }
+  },
+  created() {
+    // 获取路由中的id
+    if (this.$route.params && this.$route.params.id) {
+      this.courseId = this.$route.params.id
+      this.getPublishCourseInfo()
+    }
+  },
+  methods: {
 
-      //根据课程id查新最终课程信息
-      getPublishCourseInfo() {
-        course.getPublishCourseInfo(this.courseId)
-        .then(response=>{
+    // 根据课程id查新最终课程信息
+    getPublishCourseInfo() {
+      course.getPublishCourseInfo(this.courseId)
+        .then(response => {
           this.coursePublish = response.data.publishVo
           console.log(this.coursePublish)
         })
-      },
-
-      //返回章节小节页
-      previous() {
-          //跳转到上一步
-          this.$router.push({path:'/course/chapter/'+this.courseId})
-      },
-      //正式发布课程
-      publish() {
-            this.$confirm('确定发布课程？', '提示', {
-            confirmButtonText: '确定',
-            cancelButtonText: '取消',
-            type: 'warning'
-            }).then(() => {
-              //最终发布
-              course.officialPublishCourse(this.courseId)
-              .then(response => {
-                //提示信息
-                this.$message({
-                    type: 'success',
-                    message: '课程发布成功!'
-                });
-                //跳转到课程列表页
-                this.$router.push({path:'/course/list'})
-              })
-          })         
-      }
     },
+
+    // 返回章节小节页
+    previous() {
+      // 跳转到上一步
+      this.$router.push({ path: '/course/chapter/' + this.courseId })
+    },
+    // 正式发布课程
+    publish() {
+      this.$confirm('确定发布课程？', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        // 最终发布
+        course.officialPublishCourse(this.courseId)
+          .then(response => {
+            // 提示信息
+            this.$message({
+              type: 'success',
+              message: '课程发布成功!'
+            })
+            // 跳转到课程列表页
+            this.$router.push({ path: '/course/list' })
+          })
+      })
+    }
+  }
 }
 </script>
 

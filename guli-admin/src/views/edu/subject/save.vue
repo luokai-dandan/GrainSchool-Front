@@ -36,44 +36,43 @@
 
 <script>
 export default {
-    data() {
-        return {
-            BASE_API: process.env.BASE_API, // 接口API地址
-            importBtnDisabled: false, // 按钮是否禁用,
-            loading: false
-        }
-    },
-    created() {
-        
-    },
-    methods: {
-        //点击按钮上传文件到接口里面
-        submitUpload() {
-            this.importBtnDisabled = true
-            this.loading = true
-            this.$refs.upload.submit()
-        },
+  data() {
+    return {
+      BASE_API: process.env.BASE_API, // 接口API地址
+      importBtnDisabled: false, // 按钮是否禁用,
+      loading: false
+    }
+  },
+  created() {
 
-        //上传成功
-        fileUploadSuccess(response) {
-            this.loading = false
-            this.$message({
-                type: 'success',
-                message: '添加课程分类成功'
-            })
-            //跳转课程分类列表
-            //路由跳转
-            this.$router.push({path:'/subject/list'})
-
-        },
-        //上传失败
-        fileUploadError(response) {
-            this.loading = false
-            this.$message({
-                type: 'error',
-                message: '添加课程分类失败'
-            })
-        }
+  },
+  methods: {
+    // 点击按钮上传文件到接口里面
+    submitUpload() {
+      this.importBtnDisabled = true
+      this.loading = true
+      this.$refs.upload.submit()
     },
+
+    // 上传成功
+    fileUploadSuccess(response) {
+      this.loading = false
+      this.$message({
+        type: 'success',
+        message: '添加课程分类成功'
+      })
+      // 跳转课程分类列表
+      // 路由跳转
+      this.$router.push({ path: '/subject/list' })
+    },
+    // 上传失败
+    fileUploadError(response) {
+      this.loading = false
+      this.$message({
+        type: 'error',
+        message: '添加课程分类失败'
+      })
+    }
+  }
 }
 </script>
