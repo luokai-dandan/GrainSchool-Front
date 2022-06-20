@@ -9,5 +9,13 @@ export default {
       url: `/eduservice/indexfront/index`,
       method: 'get'
     })
+  },
+
+  //展示个人信息
+  showUserInfo(userId) {
+    return request({
+      url: `//educenter/member/showUserInfo/${userId}`,
+      method: 'get'
+    })
   }
 }

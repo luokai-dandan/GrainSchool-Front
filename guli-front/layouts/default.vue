@@ -48,7 +48,7 @@
             </li>
             <li v-if="loginInfo.id" id="is-login-two" class="h-r-user">
               <!--TODO-->
-              <a href="/ucenter" title>
+              <a href="javascript:void(0);" :title="loginInfo.nickname" @click="showUserInfo()">
                 <img
                   :src="loginInfo.avatar"
                   width="30"
@@ -170,6 +170,11 @@ export default {
       if(userStr) {
         this.loginInfo = JSON.parse(userStr)
       }
+    },
+
+    //展示用户信息
+    showUserInfo() {
+      this.$router.push({ path: '/user/userInfo'})
     },
 
     //退出登录

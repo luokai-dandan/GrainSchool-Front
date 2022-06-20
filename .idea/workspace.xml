@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/guli-front/pages/verCodeLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-front/pages/user/userInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/layouts/sign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/sign.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/utils/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +52,11 @@
     &quot;vuejs.nuxt.types-notification-shown&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\pages\user" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/guli-front/package.json" />
@@ -110,7 +107,7 @@
       <workItem from="1655663617987" duration="2354000" />
       <workItem from="1655666007947" duration="316000" />
       <workItem from="1655666329224" duration="766000" />
-      <workItem from="1655701778229" duration="19046000" />
+      <workItem from="1655701778229" duration="25129000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -133,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655730082122</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="验证码登录">
+      <created>1655743013867</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655743013867</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +147,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="前端合并" />
-    <option name="LAST_COMMIT_MESSAGE" value="前端合并" />
+    <MESSAGE value="验证码登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="验证码登录" />
   </component>
 </project>
