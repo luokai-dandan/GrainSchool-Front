@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/guli-front/api/course.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/api/teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/course/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/verCodeLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/verCodeLogin.vue" afterDir="false" />
-    </list>
+    <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,25 +28,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/Front/Guli/GrainSchool-Front/guli-front/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true",
-    "vuejs.nuxt.types-notification-shown": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/Front/Guli/GrainSchool-Front/guli-front/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;vuejs.nuxt.types-notification-shown&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\pages" />
@@ -124,7 +108,7 @@
       <workItem from="1655666329224" duration="766000" />
       <workItem from="1655701778229" duration="25240000" />
       <workItem from="1655788173681" duration="5940000" />
-      <workItem from="1655875553304" duration="21708000" />
+      <workItem from="1655875553304" duration="21760000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -161,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655749115673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="视频播放">
+      <created>1655919207971</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655919207971</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +164,7 @@
     <MESSAGE value="前端合并" />
     <MESSAGE value="验证码登录" />
     <MESSAGE value="新增个人信息页" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增个人信息页" />
+    <MESSAGE value="视频播放" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频播放" />
   </component>
 </project>
