@@ -113,6 +113,10 @@ export default {
           registerApi.sendCode(this.params.mobile).then(res => {
             this.sending = false;
             this.timeDown();
+            this.$message({
+              type: 'success',
+              message: "验证码已发送至手机"+this.user.mobile+"，请注意查收！"
+            })
           });
         }
       })

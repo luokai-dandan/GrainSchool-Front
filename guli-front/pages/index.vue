@@ -38,7 +38,7 @@
                         :src="course.cover"
                         class="img-responsive"
                         alt="course.title"
-                        style="width:350px;height:200px;display:block;margin:0 auto;"
+                        style="width:300px;height:200px;display:block;margin:0 auto;"
                       >
                       <div class="cc-mask">
                         <a href="#" title="开始学习" class="comm-btn c-btn-1">开始学习</a>

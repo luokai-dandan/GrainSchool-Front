@@ -78,7 +78,7 @@ export default {
 
                 this.$message({
                   type: 'success',
-                  message: "登录成功"
+                  message: "登录成功,默认密码123456,请尽快修改密码"
                 })
                 //跳转页面
                 window.location.href = "/";
@@ -99,6 +99,10 @@ export default {
           loginApi.sendCode(this.user.mobile).then(res => {
             this.sending = false;
             this.timeDown();
+            this.$message({
+              type: 'success',
+              message: "验证码已发送至手机"+this.user.mobile+"，请注意查收！"
+            })
           });
         }
       })
