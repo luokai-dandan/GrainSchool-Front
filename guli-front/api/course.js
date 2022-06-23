@@ -24,5 +24,14 @@ export default {
       url: `/eduservice/course/getCourseDetailInfoById/${courseId}`,
       method: 'get'
     })
+  },
+
+  //搜索课程
+  //http://localhost:8001/eduservice/indexfront/searchCourse?courseName=java
+  searchCourseByName(courseName) {
+    return request({
+      url: `/eduservice/indexfront/searchCourse?courseName=${courseName}`,
+      method: 'get'
+    })
   }
 }
