@@ -99,8 +99,6 @@
                       <i class="c-999 f-fA">{{ item.buyCount }}人学习</i>
                       |
                       <i class="c-999 f-fA">{{ item.viewCount }}浏览</i>
-                      |
-                      <i class="c-999 f-fA">{{ item.gmtCreate.split(" ")[0].replaceAll("-","/") }}</i>
                     </span>
                   </section>
                 </div>
@@ -181,6 +179,14 @@ export default {
           console.log('============查询第一页============')
           console.log(response.data.data)
           this.data = response.data.data
+
+          //提示是否登录
+          if (!this.data.isLogin) {
+            this.$message({
+              type: 'warning',
+              message: '您未登录只可以查看免费课程'
+            })
+          }
         })
     },
     //2 查询所有的分类显示

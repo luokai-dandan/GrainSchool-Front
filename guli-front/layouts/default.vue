@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
   <div class="in-wrap">
     <!-- 公共头引入 -->
@@ -102,19 +103,26 @@
           <section class="fl col-7">
             <section class="mr20">
               <section class="b-f-link">
-                <a href="http://dandanit.cloud/" title="关于我们" target="_blank">关于我们</a>|
+                <a
+                  href="http://dandanit.cloud/"
+                  title="关于我们"
+                  target="_blank">关于我们</a>|
                 <a
                   href="https://lk-1303842271.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220623195434.jpg"
-                  title="联系我们" target="_blank">联系我们</a>|
-                <span>联系方式：+8618322280259(中国陕西西安)</span>
+                  title="联系我们"
+                  target="_blank">联系我们</a>|
+                <span>联系方式：+86-18322280259(中国陕西西安)</span>
                 <span>Email：464132475@qq.com</span>
               </section>
               <section class="b-f-link mt10">
                 <a
-                  href="https://lk-1303842271.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220623195434.jpg">
+                  href="https://lk-1303842271.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220623195434.jpg"
+                  target="_blank"
+                >
                   <span>©版权均归蛋蛋编程所有</span>
                 </a>
-                <a href="https://beian.miit.gov.cn/">
+                <a href="https://beian.miit.gov.cn/" target="_blank">
+                  <img src="~/assets/img/备案图标.png" alt="备案" title="备案">
                   <span>陕ICP备2022007452号</span>
                 </a>
               </section>
@@ -192,7 +200,7 @@ export default {
   },
   created() {
     this.token = this.$route.query.token
-    console.log("token=" + this.token)
+    //console.log("token=" + this.token)
     //存在值传递
     if (this.token) {
       this.wxLogin()
@@ -226,7 +234,7 @@ export default {
     //创建方法，从cookie中获取用户信息
     showInfo() {
       //从cookie中获取用户信息
-      var userStr = cookie.get('guli_ucenter')
+      let userStr = cookie.get('guli_ucenter')
       //将字符串转换为json对象
       if (userStr) {
         this.loginInfo = JSON.parse(userStr)
@@ -250,18 +258,21 @@ export default {
     searchCourse() {
       courseApi.searchCourseByName(this.courseName)
         .then(response => {
-          console.log(response.data.data)
-          console.log(response.data.data.courseList)
+          //console.log(response.data.data)
+          //console.log(response.data.data.courseList)
           let courseTile = ""
+
+          //提示是否登录
+          if (!response.data.data.isLogin) {
+            courseTile += '您未登录只能搜索到免费课程\r\n\r\n'
+          }
           for (let i = 0; i < response.data.data.courseList.length; i++) {
-            courseTile += response.data.data.courseList[i].title + '\r\n\r\n'
+            courseTile += response.data.data.courseList[i].title + '\r\n'
           }
           this.allCourse = courseTile
           this.dialogVisible = true
         })
     },
-
-
   }
 };
 

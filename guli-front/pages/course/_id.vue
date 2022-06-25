@@ -10,9 +10,9 @@
         \
         <a href="/course" title class="c-999 fsize14">课程列表</a>
         \
-        <span class="c-333 fsize14">{{ course.subjectLevelOne }}</span>
+        <span class="c-333 fsize14">{{ courseInfo.subjectLevelOne }}</span>
         \
-        <span class="c-333 fsize14">{{ course.subjectLevelTwo }}</span>
+        <span class="c-333 fsize14">{{ courseInfo.subjectLevelTwo }}</span>
       </section>
       <!-- /课程所属分类 结束 -->
 
@@ -21,8 +21,8 @@
         <article class="c-v-pic-wrap" style="height: 357px;">
           <section id="videoPlay" class="p-h-video-box">
             <img
-              :src="course.cover"
-              :alt="course.title"
+              :src="courseInfo.cover"
+              :alt="courseInfo.title"
               class="dis c-v-pic"
               style="width: 650px;height: 357px"
             >
@@ -31,16 +31,16 @@
         <aside class="c-attr-wrap">
           <section class="ml20 mr15">
             <h2 class="hLh30 txtOf mt15">
-              <span class="c-fff fsize24">{{ course.title }}</span>
+              <span class="c-fff fsize24">{{ courseInfo.title }}</span>
             </h2>
             <section class="c-attr-jg">
               <span class="c-fff">价格：</span>
               <b class="c-yellow" style="font-size:24px;">
-                {{ Number(course.price) === 0 ? '免费' : '￥ ' + course.price }}
+                {{ Number(courseInfo.price) === 0 ? '免费' : '￥ ' + courseInfo.price }}
               </b>
             </section>
             <section class="c-attr-mt c-attr-undis">
-              <span class="c-fff fsize14">主讲： {{ course.teacherName }}&nbsp;&nbsp;&nbsp;</span>
+              <span class="c-fff fsize14">主讲： {{ courseInfo.teacherName }}&nbsp;&nbsp;&nbsp;</span>
             </section>
             <section class="c-attr-mt of">
                 <span class="ml10 vam">
@@ -49,8 +49,8 @@
                 </span>
             </section>
             <section class="c-attr-mt">
-              <a href="#" title="立即观看" class="comm-btn c-btn-3" v-if="course.price===0">立即观看</a>
-              <a @click="createOrder()" href="#" title="立即购买" class="comm-btn c-btn-3" v-else>立即购买</a>
+              <el-button type="success" v-if="isbuyCourse||Number(courseInfo.price)===0">立即观看</el-button>
+              <el-button @click="createOrder()" type="danger" v-else>立即购买</el-button>
             </section>
           </section>
         </aside>
@@ -61,7 +61,7 @@
               <aside>
                 <span class="c-fff f-fM">购买数</span>
                 <br>
-                <h6 class="c-fff f-fM mt10">{{ course.buyCount }}</h6>
+                <h6 class="c-fff f-fM mt10">{{ courseInfo.buyCount }}</h6>
               </aside>
             </li>
             <li>
@@ -69,7 +69,7 @@
               <aside>
                 <span class="c-fff f-fM">课时数</span>
                 <br>
-                <h6 class="c-fff f-fM mt10">{{ course.lessonNum }}</h6>
+                <h6 class="c-fff f-fM mt10">{{ courseInfo.lessonNum }}</h6>
               </aside>
             </li>
             <li>
@@ -77,7 +77,7 @@
               <aside>
                 <span class="c-fff f-fM">浏览数</span>
                 <br>
-                <h6 class="c-fff f-fM mt10">{{ course.viewCount }}</h6>
+                <h6 class="c-fff f-fM mt10">{{ courseInfo.viewCount }}</h6>
               </aside>
             </li>
           </ol>
@@ -105,7 +105,7 @@
                   <div class="course-txt-body-wrap">
                     <section class="course-txt-body">
                       <!-- 将内容中的html翻译过来 -->
-                      <p v-html="course.description">{{ course.description }}</p>
+                      <p v-html="courseInfo.description">{{ courseInfo.description }}</p>
                     </section>
                   </div>
                 </div>
@@ -129,7 +129,7 @@
                               <li v-for="video in chapter.children" :key="video.id" class="lh-menu-second ml30">
                                 <a :href="video.videoUrl" :title="video.videoUrl" target="_blank">
                                     <span class="fr">
-                                        <i class="free-icon vam mr10">免费试听</i>
+                                        <i class="free-icon vam mr10">免费试看</i>
                                     </span>
                                   <em class="lh-menu-i-2 icon16 mr5">&nbsp;</em>{{ video.title }}
                                 </a>
@@ -151,22 +151,22 @@
             <!-- 主讲讲师 开始-->
             <div>
               <section class="c-infor-tabTitle c-tab-title">
-                <a title :href="'/teacher/'+course.teacherId" target="_blank">主讲讲师</a>
+                <a title :href="'/teacher/'+courseInfo.teacherId" target="_blank">主讲讲师</a>
               </section>
               <section class="stud-act-list">
                 <ul style="height: auto;">
                   <li>
                     <div class="u-face">
-                      <a :href="'/teacher/'+course.teacherId" target="_blank">
-                        <img :src="course.avatar" width="50" height="50" alt>
+                      <a :href="'/teacher/'+courseInfo.teacherId" target="_blank">
+                        <img :src="courseInfo.avatar" width="50" height="50" alt>
                       </a>
                     </div>
                     <section class="hLh30 txtOf">
-                      <a :href="'/teacher/'+course.teacherId" class="c-333 fsize16 fl"
-                         target="_blank">{{ course.teacherName }}</a>
+                      <a :href="'/teacher/'+courseInfo.teacherId" class="c-333 fsize16 fl"
+                         target="_blank">{{ courseInfo.teacherName }}</a>
                     </section>
                     <section class="hLh20 txtOf">
-                      <span class="c-999">{{ course.intro }}</span>
+                      <span class="c-999">{{ courseInfo.intro }}</span>
                     </section>
                   </li>
                 </ul>
@@ -284,20 +284,7 @@ import orderApi from '@/api/order'
 export default {
 
   asyncData({params, error}) {
-    return courseApi.getCourseDetailInfoById(params.id).then(response => {
-
-      console.log("===========课程详情============");
-      console.log(response.data.data.course);
-      console.log("===========章节列表============");
-      console.log(response.data.data.chapterVoList);
-      console.log("===========课程视频============");
-      console.log(response.data.data.chapterVoList[1]);
-      return {
-        course: response.data.data.course,
-        chapterList: response.data.data.chapterVoList,
-        courseId: params.id
-      }
-    })
+    return {courseId: params.id}
   },
 
   //和页面异步开始的
@@ -315,7 +302,8 @@ export default {
       },
       courseInfo: {},
       chapterVideoList: [],
-      isbuyCourse: false
+      isbuyCourse: false,
+      createOrderFlag: false
     }
   },
   created() {
@@ -345,7 +333,7 @@ export default {
           console.log(response.data.data)
           this.courseInfo = response.data.data.course
           this.chapterVideoList = response.data.data.chapterVoList
-          this.isbuyCourse = response.data.data.isbuyCourse
+          this.isbuyCourse = response.data.data.isBuy
         })
     },
 

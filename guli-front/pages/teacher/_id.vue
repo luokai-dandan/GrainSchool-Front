@@ -79,17 +79,36 @@
   </div>
 </template>
 <script>
+import { Message } from "element-ui";
 import teacherApi from '@/api/teacher'
 
 export default {
   asyncData({ params, error }) {
     return teacherApi.getTeacherInfo(params.id)
       .then(response => {
+
+        console.log("==========讲师的信息==========")
+        console.log(response.data.data)
+
         return {
           teacher: response.data.data.teacher,
-          courseList: response.data.data.courseList
+          courseList: response.data.data.courseList,
+          isLogin: response.data.data.isLogin
         }
       })
   },
+  data() {
+    return {
+    }
+  },
+  created() {
+    //提示是否登录
+    if (!this.isLogin) {
+      Message({
+        type: 'warning',
+        message: '您未登录只可以查看免费课程'
+      })
+    }
+  }
 };
 </script>

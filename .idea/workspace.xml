@@ -2,70 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/guli-front/api/commentedu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/api/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/activity_tab.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/bottom_rec.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/nice_select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/pages-weixinpay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/css/swiper-3.3.1.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/cart_setp2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/erweima.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/f12c399b34115265a7a8a4da329b45d0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/phone-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/备案图标.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/img/微信图片_20220623195434.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/article/hot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/course/default.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/customer/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/customer/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/customer/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/customer/avatar-boy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/assets/photo/teacher/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/pages/order/_oid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-admin/src/api/sta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-admin/src/views/sta/create.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-admin/src/views/sta/show.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-front/pages/pay/_pid.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/sign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/assets/css/web.css" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/assets/css/web.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/course/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/order/_oid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/Front/Guli/GrainSchool-Front/guli-front/assets/img",
+    "last_opened_file_path": "D:/Java/Front/Guli/GrainSchool-Front/guli-admin/src/api",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -116,17 +67,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-admin\src\api" />
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\assets\img" />
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\pages" />
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-admin\src\api" />
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-front\pages\user" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/guli-front/package.json" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.guli-admin">
+    <configuration name="guli-admin" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/guli-admin/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -135,8 +95,8 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/guli-admin/package.json" />
+    <configuration name="guli-front" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/guli-front/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -157,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.guli-front" />
+        <item itemvalue="npm.guli-admin" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -178,7 +138,10 @@
       <workItem from="1655788173681" duration="5940000" />
       <workItem from="1655875553304" duration="21760000" />
       <workItem from="1655920878558" duration="39000" />
-      <workItem from="1655959014400" duration="32231000" />
+      <workItem from="1655959014400" duration="32299000" />
+      <workItem from="1656051894716" duration="24716000" />
+      <workItem from="1656135206984" duration="3216000" />
+      <workItem from="1656141674052" duration="11738000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -229,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655920892509</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="生成订单">
+      <created>1656011326147</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656011326148</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +213,7 @@
     <MESSAGE value="验证码登录" />
     <MESSAGE value="新增个人信息页" />
     <MESSAGE value="视频播放" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频播放" />
+    <MESSAGE value="生成订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="生成订单" />
   </component>
 </project>

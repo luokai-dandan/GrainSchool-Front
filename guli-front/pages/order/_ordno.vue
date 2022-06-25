@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
   <div class="Page Confirm">
     <div class="Title">
@@ -62,8 +63,8 @@
           </div>
         </div>
         <input name="score" value="0" type="hidden" id="usedScore">
-        <button class="fr redb" type="button" id="submitPay" @click="toPay()" :disabled="submitOrderBtn" v-if="submitOrderBtn===false">去支付</button>
-        <button class="fr redb_false" type="button" id="submitPay" @click="toPay()" :disabled="submitOrderBtn" v-else>去支付</button>
+        <button class="fr redb" type="button" id="submitPay" @click="toPay()" v-if="submitOrderBtn===false">去支付</button>
+        <button class="fr redb_false" type="button" id="submitPay" @click="notAgree()" v-else>去支付</button>
         <div class="clear"></div>
       </div>
     </form>
@@ -74,9 +75,10 @@
 import orderApi from '@/api/order'
 
 export default {
+
   //根据订单id获取订单信息
   asyncData({params, error}) {
-    return orderApi.getById(params.oid)
+    return orderApi.getById(params.ordno)
       .then(response => {
         console.log("=========跳转订单页========")
         console.log(response.data.data)
@@ -95,6 +97,13 @@ export default {
 
   },
   methods: {
+    //未勾选同意协议点击
+    notAgree() {
+      this.$message({
+        type: 'warning',
+        message: "勾选协议后方可支付！"
+      })
+    },
     //点击checkbox事件
     modifyCheckBox() {
       this.checkStatus = !this.checkStatus;
@@ -103,7 +112,7 @@ export default {
 
     //点击去支付，跳转到支付页面
     toPay() {
-      this.$router.push({path: '/'})
+      this.$router.push({path: '/pay/'+this.order.orderNo})
     }
   }
 }

@@ -21,7 +21,7 @@ export default {
   //根据课程查询课程的详细信息
   getCourseDetailInfoById(courseId) {
     return request({
-      url: `/eduservice/course/getCourseDetailInfoById/${courseId}`,
+      url: `/eduservice/coursefront/getCourseDetailInfoById/${courseId}`,
       method: 'get'
     })
   },

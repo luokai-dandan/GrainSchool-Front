@@ -1,3 +1,4 @@
+<!--suppress JSUnresolvedVariable -->
 <template>
 
   <div>
@@ -41,11 +42,11 @@
                         style="width:300px;height:200px;display:block;margin:0 auto;"
                       >
                       <div class="cc-mask">
-                        <a href="#" title="开始学习" class="comm-btn c-btn-1">开始学习</a>
+                        <a :href="'/course/'+course.id" title="开始学习" class="comm-btn c-btn-1">开始学习</a>
                       </div>
                     </section>
                     <h3 class="hLh30 txtOf mt10">
-                      <a href="#" title="course.title" class="course-title fsize18 c-333">{{ course.title }}</a>
+                      <a :href="'/course/'+course.id" title="course.title" class="course-title fsize18 c-333">{{ course.title }}</a>
                     </h3>
                     <section class="mt10 hLh20 of">
                       <span class="fr jgTag bg-green">
@@ -85,14 +86,14 @@
                 <li v-for="teacher in teacherList" :key="teacher.id">
                   <section class="i-teach-wrap">
                     <div class="i-teach-pic">
-                      <a href='/teacher/1' title="teacher.name">
+                      <a :href="'/teacher/'+teacher.id" title="teacher.name">
                         <img
                           :alt="teacher.name"
                           :src="teacher.avatar">
                       </a>
                     </div>
                     <div class="mt10 hLh30 txtOf tac">
-                      <a href="/teacher/1" :title="teacher.name" class="fsize18 c-666">{{ teacher.name }}</a>
+                      <a :href="'/teacher/'+teacher.id" :title="teacher.name" class="fsize18 c-666">{{ teacher.name }}</a>
                     </div>
                     <div class="hLh30 txtOf tac">
                       <span class="fsize14 c-999">{{ teacher.career }}</span>
@@ -163,10 +164,18 @@ export default {
     getIndex() {
       index.getIndex()
         .then(response => {
-          // console.log("==============查询热门课程和名师==============")
-          // console.log(response)
+          console.log("==============查询热门课程和名师==============")
+          console.log(response.data.data)
           this.courseList = response.data.data.courseList
           this.teacherList = response.data.data.teacherList
+
+          //提示是否登录
+          if (!response.data.data.isLogin) {
+            this.$message({
+              type: 'warning',
+              message: '您未登录只可以查看免费课程'
+            })
+          }
         })
     }
   }
