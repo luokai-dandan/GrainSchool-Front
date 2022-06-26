@@ -140,7 +140,7 @@
             <section class="gf-tx">
               <span>
                 <a href="javascript: void(0)" @click="undeveloped()">
-                  <img src="~/assets/img/wb-icon.png" alt="联系微信" title="联系微信">
+                  <img src="~/assets/img/wb-icon.png" alt="联系微博" title="联系微博">
                 </a>
               </span>
             </section>
@@ -151,7 +151,7 @@
     </footer>
     <!-- /公共底引入 -->
     <div id="app">
-      <img src="assets/img/logo.png" alt="">
+      <img src="~/assets/img/logo.png" alt="谷粒学院">
       <el-dialog
         title="搜索结果"
         :visible.sync="dialogVisible"
@@ -162,6 +162,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import "~/assets/css/reset.css";
 import "~/assets/css/theme.css";
@@ -179,6 +180,13 @@ import loginApi from "@/api/login";
 import cookie from "js-cookie";
 import teacherApi from "@/api/teacher";
 import courseApi from "@/api/course";
+import Vue from 'vue'
+import {
+  Notification,
+  Message
+} from 'element-ui'
+Vue.prototype.$notify = Notification
+Vue.prototype.$message = Message
 
 export default {
 

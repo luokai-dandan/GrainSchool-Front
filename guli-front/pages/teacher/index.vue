@@ -91,18 +91,28 @@ import teacherApi from '@/api/teacher'
 
 export default {
 
-  //异步调用
-  //params:相当于this.$route.params.id = params.id
-  asyncData({ params, error }) {
-    return teacherApi.getTeacherList(1, 8)
-      .then(response => {
-        return { data: response.data.data }
-    })
+  data() {
+    return {
+      page: 1,
+      limit: 8,
+      data: ''
+    }
+  },
+
+  created() {
+    this.getTeacherIndexList()
   },
 
   methods: {
+    //获取讲师列表
+    getTeacherIndexList() {
+      teacherApi.getTeacherList(this.page, this.limit)
+        .then(response => {
+          this.data = response.data.data
+        })
+    },
 
-    //点击页
+    //点击页跳转
     gotoPage(page){
       teacherApi.getTeacherList(page, 8).then(response => {
         this.data = response.data.data

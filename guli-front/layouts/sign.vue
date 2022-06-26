@@ -1,3 +1,4 @@
+<!--suppress CheckImageSize -->
 <template>
   <div class="sign">
     <!--标题-->

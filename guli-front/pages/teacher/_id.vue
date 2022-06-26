@@ -79,35 +79,45 @@
   </div>
 </template>
 <script>
-import { Message } from "element-ui";
 import teacherApi from '@/api/teacher'
 
 export default {
-  asyncData({ params, error }) {
-    return teacherApi.getTeacherInfo(params.id)
-      .then(response => {
 
-        console.log("==========讲师的信息==========")
-        console.log(response.data.data)
-
-        return {
-          teacher: response.data.data.teacher,
-          courseList: response.data.data.courseList,
-          isLogin: response.data.data.isLogin
-        }
-      })
-  },
   data() {
     return {
+      isLogin: false,
+      teacher: '',
+      courseList: [],
+      teacherId:''
     }
   },
+
   created() {
-    //提示是否登录
-    if (!this.isLogin) {
-      Message({
-        type: 'warning',
-        message: '您未登录只可以查看免费课程'
-      })
+    // 获取路由中的id
+    if (this.$route.params && this.$route.params.id) {
+      this.teacherId = this.$route.params.id
+    }
+    this.getTeacherInfoAndCourseList()
+  },
+
+  methods: {
+    getTeacherInfoAndCourseList() {
+      teacherApi.getTeacherInfo(this.teacherId)
+        .then(response => {
+          this.isLogin = response.data.data.isLogin
+          this.teacher = response.data.data.teacher
+          this.courseList = response.data.data.courseList
+          if (!this.isLogin) {
+            this.$message({
+              type: 'warning',
+              message: '您未登录只可以查看免费课程'
+            })
+          }
+          console.log("===========讲师和所讲课程信息============")
+          console.log(this.isLogin)
+          console.log(this.teacher)
+          console.log(this.courseList)
+        })
     }
   }
 };

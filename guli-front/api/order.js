@@ -10,7 +10,7 @@ export default {
     })
   },
   //2、根据id获取订单
-  getById(orderNo) {
+  getOrderInfoByNo(orderNo) {
     return request({
       url: `/orderservice/order/getOrderInfo/${orderNo}`,
       method: 'get'

@@ -123,6 +123,14 @@
 import banner from '@/api/banner'
 import index from '@/api/index'
 
+import Vue from 'vue'
+import {
+  Notification,
+  Message
+} from 'element-ui'
+Vue.prototype.$notify = Notification
+Vue.prototype.$message = Message
+
 export default {
   data () {
     return {
@@ -148,8 +156,7 @@ export default {
 
   created() {
     //调用查询bannerList
-    this.getBannerList()
-    this.getIndex()
+    this.getIndexInfo()
   },
 
   methods: {
@@ -161,7 +168,10 @@ export default {
           this.bannerList = response.data.data.list
         })
     },
-    getIndex() {
+    getIndexInfo() {
+      //获取幻灯片
+      this.getBannerList()
+      //获取名师和课程
       index.getIndex()
         .then(response => {
           console.log("==============查询热门课程和名师==============")
@@ -176,6 +186,7 @@ export default {
               message: '您未登录只可以查看免费课程'
             })
           }
+
         })
     }
   }

@@ -76,27 +76,31 @@ import orderApi from '@/api/order'
 
 export default {
 
-  //根据订单id获取订单信息
-  asyncData({params, error}) {
-    return orderApi.getById(params.ordno)
-      .then(response => {
-        console.log("=========跳转订单页========")
-        console.log(response.data.data)
-        return {
-          order: response.data.data.order
-        }
-    })
-  },
   data() {
     return {
       checkStatus: false,
-      submitOrderBtn: true
+      submitOrderBtn: true,
+      order: '',
+      orderNo: ''
     }
   },
   created() {
-
+    // 获取路由中的id
+    if (this.$route.params && this.$route.params.ordno) {
+      this.orderNo = this.$route.params.ordno
+    }
+    this.getOrderInfo()
   },
   methods: {
+    //显示订单页信息
+    getOrderInfo() {
+      orderApi.getOrderInfoByNo(this.orderNo)
+        .then(response => {
+          console.log("=========跳转订单页========")
+          console.log(response.data.data.order)
+          this.order = response.data.data.order
+        })
+    },
     //未勾选同意协议点击
     notAgree() {
       this.$message({

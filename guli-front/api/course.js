@@ -22,7 +22,7 @@ export default {
   getCourseDetailInfoById(courseId) {
     return request({
       url: `/eduservice/coursefront/getCourseDetailInfoById/${courseId}`,
-      method: 'get'
+      method: 'post'
     })
   },
 

@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/guli-admin/src/api/sta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-admin/src/views/sta/create.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-admin/src/views/sta/show.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guli-front/pages/pay/_pid.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-admin/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/course.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/layouts/sign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/sign.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/course/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/order/_oid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-front/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/utils/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,27 +42,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/Front/Guli/GrainSchool-Front/guli-admin/src/api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true",
-    "vuejs.nuxt.types-notification-shown": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/Front/Guli/GrainSchool-Front/guli-admin/src/api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;vuejs.nuxt.types-notification-shown&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\Front\Guli\GrainSchool-Front\guli-admin\src\api" />
@@ -141,7 +139,10 @@
       <workItem from="1655959014400" duration="32299000" />
       <workItem from="1656051894716" duration="24716000" />
       <workItem from="1656135206984" duration="3216000" />
-      <workItem from="1656141674052" duration="11738000" />
+      <workItem from="1656141674052" duration="12362000" />
+      <workItem from="1656171941991" duration="13000" />
+      <workItem from="1656231233014" duration="1930000" />
+      <workItem from="1656235314507" duration="11379000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656011326148</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="统计分析">
+      <created>1656169492934</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656169492934</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +222,7 @@
     <MESSAGE value="新增个人信息页" />
     <MESSAGE value="视频播放" />
     <MESSAGE value="生成订单" />
-    <option name="LAST_COMMIT_MESSAGE" value="生成订单" />
+    <MESSAGE value="统计分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="统计分析" />
   </component>
 </project>

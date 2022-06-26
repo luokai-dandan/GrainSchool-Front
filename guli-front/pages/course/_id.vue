@@ -121,13 +121,13 @@
                       <menu id="lh-menu" class="lh-menu mt10 mr10">
                         <ul>
                           <!-- 课程章节目录 -->
-                          <li v-for="chapter in chapterList" :key="chapter.id" class="lh-menu-stair">
-                            <a :title="chapter.title" class="current-1">
-                              <em class="lh-menu-i-1 icon18 mr10"/>{{ chapter.title }}
+                          <li v-for="chapterVideo in chapterVideoList" :key="chapterVideo.id" class="lh-menu-stair">
+                            <a :title="chapterVideo.title" class="current-1">
+                              <em class="lh-menu-i-1 icon18 mr10"/>{{ chapterVideo.title }}
                             </a>
                             <ol class="lh-menu-ol" style="display: block;">
-                              <li v-for="video in chapter.children" :key="video.id" class="lh-menu-second ml30">
-                                <a :href="video.videoUrl" :title="video.videoUrl" target="_blank">
+                              <li v-for="video in chapterVideo.children" :key="video.id" class="lh-menu-second ml30">
+                                <a :href="video.videoUrl" :title="video.videoUrl" target="_blank" v-if="isbuyCourse||Number(courseInfo.price)===0">
                                     <span class="fr">
                                         <i class="free-icon vam mr10">免费试看</i>
                                     </span>
@@ -283,10 +283,6 @@ import orderApi from '@/api/order'
 
 export default {
 
-  asyncData({params, error}) {
-    return {courseId: params.id}
-  },
-
   //和页面异步开始的
   data() {
     return {
@@ -300,6 +296,7 @@ export default {
         content: '',
         courseId: ''
       },
+      courseId: '',
       courseInfo: {},
       chapterVideoList: [],
       isbuyCourse: false,
@@ -307,9 +304,14 @@ export default {
     }
   },
   created() {
-    this.initCourseInfo()
-    this.initComment()
-    this.initUserInfo()
+    // 获取路由中的id
+    if (this.$route.params && this.$route.params.id) {
+      this.courseId = this.$route.params.id
+      this.initCourseInfo()
+      this.initComment()
+      this.initUserInfo()
+    }
+
   },
   methods: {
 
@@ -330,7 +332,8 @@ export default {
       courseApi.getCourseDetailInfoById(this.courseId)
         .then(response => {
           console.log("===========课程详情==========")
-          console.log(response.data.data)
+          console.log(response.data.data.course)
+          console.log(response.data.data.chapterVoList)
           this.courseInfo = response.data.data.course
           this.chapterVideoList = response.data.data.chapterVoList
           this.isbuyCourse = response.data.data.isBuy
