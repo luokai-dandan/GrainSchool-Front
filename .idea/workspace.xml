@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e4572007-6e31-497e-85af-ef5e56499707" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/config/dev.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-admin/src/views/edu/teacher/save.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/api/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/layouts/sign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/layouts/sign.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/course/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/order/_ordno.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/pages/teacher/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guli-front/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/guli-front/utils/request.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +130,10 @@
       <workItem from="1656141674052" duration="12362000" />
       <workItem from="1656171941991" duration="13000" />
       <workItem from="1656231233014" duration="1930000" />
-      <workItem from="1656235314507" duration="11379000" />
+      <workItem from="1656235314507" duration="11436000" />
+      <workItem from="1656335183961" duration="754000" />
+      <workItem from="1656392784820" duration="291000" />
+      <workItem from="1656393171596" duration="1185000" />
     </task>
     <task id="LOCAL-00001" summary="前端合并">
       <created>1655663734797</created>
@@ -207,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656169492934</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改代码+去除异步">
+      <created>1656255070957</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656255070957</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +221,7 @@
     <MESSAGE value="视频播放" />
     <MESSAGE value="生成订单" />
     <MESSAGE value="统计分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="统计分析" />
+    <MESSAGE value="修改代码+去除异步" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改代码+去除异步" />
   </component>
 </project>
