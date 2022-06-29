@@ -31,8 +31,7 @@
         <!-- 头衔缩略图 -->
         <pan-thumb :image="teacher.avatar"/>
         <!-- 文件上传按钮 -->
-        <el-button type="primary" icon="el-icon-upload" @click="imagecropperShow=true">更换头像
-        </el-button>
+        <el-button type="primary" icon="el-icon-upload" @click="imagecropperShow=true">更换头像</el-button>
 
         <!--v-show：是否显示上传组件
               :key：类似于id，如果一个页面多个图片上传控件，可以做区分

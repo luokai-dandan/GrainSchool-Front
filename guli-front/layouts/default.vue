@@ -20,12 +20,6 @@
             <router-link to="/teacher" tag="li" active-class="current">
               <a>名师</a>
             </router-link>
-            <router-link to="/article" tag="li" active-class="current">
-              <a>文章</a>
-            </router-link>
-            <router-link to="/qa" tag="li" active-class="current">
-              <a>问答</a>
-            </router-link>
           </ul>
           <!-- / nav -->
           <!-- / nav -->

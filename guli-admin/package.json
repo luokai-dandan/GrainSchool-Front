@@ -23,7 +23,8 @@
     "vue": "2.5.17",
     "vue-axios": "^3.4.1",
     "vue-router": "3.0.1",
-    "vuex": "3.0.1"
+    "vuex": "3.0.1",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "8.5.0",

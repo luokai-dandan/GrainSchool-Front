@@ -7,7 +7,7 @@ module.exports = {
   css: [
     'swiper/dist/css/swiper.css'
   ],
-
+  target: 'static',
   /*
   ** Headers of the page
   */
